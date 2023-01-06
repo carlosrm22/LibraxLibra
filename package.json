@@ -1,0 +1,24 @@
+{
+  "name": "lxl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosrm22/lxl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosrm22/lxl/issues"
+  },
+  "homepage": "https://github.com/carlosrm22/lxl#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
