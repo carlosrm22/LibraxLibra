@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/carlosrm22/lxl#readme",
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3"
   }
 }
