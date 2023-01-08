@@ -1,0 +1,30 @@
+/* Modificando las variables de Bootstrap */
+
+// scss-docs-start theme-color-variables
+$primary: #d8ff00;
+$secondary: #ffcc00;
+$success: #f3ff66;
+$danger: #99cc00;
+$warning: #6600cc;
+$info: #ff9900;
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-shadows: true;
+$enable-gradients: true;
+// Settings for the `<body>` element.
+$body-bg: #171717;
+$body-color: #fff;
+// Style anchor elements.
+$link-color: #fff;
+$link-decoration: none;
+$link-hover-color: $primary;
+$link-hover-text-transform: uppercase;
+$link-hover-font-style: italic;
+$link-hover-font-weight: bold;
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: "Victor Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+// scss-docs-start headings-variables
+$headings-font-style: italic;
+$headings-font-weight: 900;
+$headings-color: $primary;
