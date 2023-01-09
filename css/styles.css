@@ -1,4 +1,5 @@
 /* Modificando las variables de Bootstrap */
+/* Libra x Libra variables */
 /*!
    * Bootstrap  v5.2.3 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
@@ -8439,3 +8440,8 @@ textarea.form-control-lg {
     display: inline-flex !important; }
   .d-print-none {
     display: none !important; } }
+
+/* Headings */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  text-shadow: #000 0 0 12px, #d8ff00 0 0 5px, #d8ff00 0 0 10px;
+  text-transform: uppercase; }
