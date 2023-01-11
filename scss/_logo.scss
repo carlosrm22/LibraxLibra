@@ -1,0 +1,38 @@
+.viñeta {
+    transition: all 1s ease-out;
+}
+
+.viñeta:hover {
+    animation: viñetaDancing .8s infinite ease-out;
+}
+
+.logoTexto {
+    @include titles;
+    font-size: 6.5vw;
+    transition: all 0.3s ease-in;
+    animation: sombraPulso 1.5s infinite ease-out;
+}
+
+.logoTexto:hover {
+    transform: scale(1.02);
+    /*     animation: viñetaDancing .8s infinite ease-out, sombraPulso 1.5s infinite;
+ */
+}
+
+.logoTexto:active {
+    color: $primary;
+    font-size: 3.5vw;
+}
+
+.logoTexto-x {
+    font-weight: normal;
+    font-style: normal;
+    color: $white;
+    transition: all 0.5s ease;
+    margin-left: 1.8%;
+    animation: sombraPulso 1.5s infinite;
+}
+
+.logoTexto-x:hover {
+    transform: rotate(90deg) scale(1.2);
+}

@@ -1,4 +1,26 @@
-@import "./variables";
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "./mixins";
-@import "./type";
+// variables
+@import "variables";
+
+// layout
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../node_modules/bootstrap/scss/bootstrap-utilities.scss";
+@import "size";
+
+// mixins
+@import "mixins";
+
+// keyframes
+@import "keyframes";
+
+// components
+@import "logo";
+@import "type";
+@import "images";
+
+// labels
+@import "body";
+
+// media query
+@import "media";
+
+// pages

@@ -1,4 +1,12 @@
 @mixin titles {
-    text-shadow: $neon1;
-    text-transform: uppercase;
+    text-transform: $uppercase;
+    text-transform: $uppercase;
+    font-style: $italic;
+    font-weight: $extra-bold;
+    color: $primary;
+}
+
+@mixin text {
+    font-family: $font-family;
+    color: $primary;
 }

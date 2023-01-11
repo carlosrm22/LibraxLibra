@@ -7,3 +7,7 @@ h5,
 h6 {
     @include titles;
 }
+
+a {
+    text-decoration: none;
+}
