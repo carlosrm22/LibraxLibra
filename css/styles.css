@@ -1,5 +1,266 @@
 @charset "UTF-8";
 /* neon */
+.w-1 {
+  width: 10%; }
+
+.w-2 {
+  width: 20%; }
+
+.w-3 {
+  width: 30%; }
+
+.w-4 {
+  width: 40%; }
+
+.w-5 {
+  width: 50%; }
+
+.w-6 {
+  width: 60%; }
+
+.w-7 {
+  width: 70%; }
+
+.w-8 {
+  width: 80%; }
+
+.w-9 {
+  width: 90%; }
+
+.w-10 {
+  width: 100%; }
+
+* {
+  padding: 0 !important;
+  margin: 0 !important; }
+
+html {
+  transition: all 0.5s ease-in;
+  animation: fade-in 2s;
+  overflow-x: hidden; }
+
+.viñeta {
+  transition: all 1s ease-out; }
+
+.viñeta:hover {
+  animation: viñetaDancing .8s infinite ease-out; }
+
+.logoTexto {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
+  color: #d8ff00;
+  font-size: 6.5vw;
+  transition: all 0.3s ease-in;
+  animation: sombraPulso 1.5s infinite ease-out; }
+
+.logoTexto:hover {
+  transform: scale(1.02);
+  /*     animation: viñetaDancing .8s infinite ease-out, sombraPulso 1.5s infinite;
+ */ }
+
+.logoTexto:active {
+  color: #d8ff00;
+  font-size: 3.5vw; }
+
+.logoTexto-x {
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+  transition: all 0.5s ease;
+  margin-left: 1.8%;
+  animation: sombraPulso 1.5s infinite; }
+
+.logoTexto-x:hover {
+  transform: rotate(90deg) scale(1.2); }
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
+  color: #d8ff00; }
+
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: url(../assets/icons/guante.svg), auto;
+  animation: agrandamiento 2s ease;
+  transition: all 0.3s ease-out; }
+
+a:hover {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
+  color: #d8ff00; }
+
+a:active {
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(45deg, #ffcc00, #d8ff00);
+  text-transform: uppercase;
+  font-size: 1.5rem; }
+
+strong {
+  color: #ffcc00;
+  text-shadow: 0 0 3px #d8ff00;
+  letter-spacing: 1px; }
+
+body {
+  background-color: #171717;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #f8f8f8;
+  text-decoration: none; }
+
+/* Redes */
+.redes li {
+  display: inline-block; }
+
+.redes i {
+  transition: transform 0.5s ease;
+  animation: doblez 2s ease; }
+
+.redes-hover:hover {
+  transform: scale(1.5); }
+
+.redes li a {
+  position: relative;
+  display: block;
+  width: 53px;
+  height: 53px;
+  text-align: center;
+  line-height: 56px;
+  border-radius: 50%;
+  font-size: 190%;
+  color: #888;
+  transition: 0.5s; }
+
+.redes li a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transition: 0.5s;
+  z-index: -1; }
+
+.redes li a:hover::before {
+  box-shadow: 0 0 15px #fff; }
+
+.redes li a:hover {
+  color: #d8ff00;
+  box-shadow: 0 0 5px #d8ff00;
+  text-shadow: 0 0 5px #888;
+  transform: rotate(360deg) scale(1.1); }
+
+nav ul li {
+  list-style-type: none;
+  background-image: radial-gradient(#ffcc00, #f3ff66);
+  background-position: 0 100%;
+  background-size: 0 1px;
+  animation: agrandamiento 2s ease;
+  transition: background-size 0.3s;
+  background-repeat: no-repeat;
+  padding: 0 15px; }
+
+nav ul li:hover {
+  background-size: 100% 1px;
+  transition: all 0.3s ease-in-out; }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes whatsapp {
+  0% {
+    transform: scale(0.95) rotate(3.5deg); }
+  50% {
+    transform: scale(1) rotate(3.5deg); }
+  100% {
+    transform: scale(0.95) rotate(3.5deg); } }
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%; }
+  50%,
+  100% {
+    left: 100%; } }
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%; }
+  50%,
+  100% {
+    top: 100%; } }
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%; }
+  50%,
+  100% {
+    right: 100%; } }
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%; }
+  50%,
+  100% {
+    bottom: 100%; } }
+
+@keyframes sombraPulso {
+  0% {
+    text-shadow: 0 0 1px #171717, 0 0 10px #d8ff00; }
+  50% {
+    text-shadow: 0 0 2px #171717, 0 0 20px #d8ff00; }
+  100% {
+    text-shadow: 0 0 2px #171717, 0 0 10px #d8ff00; } }
+
+@keyframes lineaPulso {
+  0% {
+    background-size: 0 0; }
+  50% {
+    background-size: 20% 2px; }
+  100% {
+    background-size: 0 0; } }
+
+@keyframes viñetaDancing {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(1.2deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@keyframes doblez {
+  0% {
+    transform: rotateX(90deg); }
+  100% {
+    transform: rotateX(0deg); } }
+
+@keyframes agrandamiento {
+  0% {
+    transform: scale(0); }
+  50% {
+    transform: scale(1.5); }
+  100% {
+    transform: scale(1); } }
+
+@media screen and (max-width: 768px) {
+  .logoTexto {
+    font-size: 9vw; }
+  .navMobile {
+    display: none; } }
+
 /*!
    * Bootstrap Grid v5.2.3 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
@@ -6042,179 +6303,3 @@
     display: inline-flex !important; }
   .d-print-none {
     display: none !important; } }
-
-.w-1 {
-  width: 10%; }
-
-.w-2 {
-  width: 20%; }
-
-.w-3 {
-  width: 30%; }
-
-.w-4 {
-  width: 40%; }
-
-.w-5 {
-  width: 50%; }
-
-.w-6 {
-  width: 60%; }
-
-.w-7 {
-  width: 70%; }
-
-.w-8 {
-  width: 80%; }
-
-.w-9 {
-  width: 90%; }
-
-.w-10 {
-  width: 100%; }
-
-@keyframes fade-in {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes whatsapp {
-  0% {
-    transform: scale(0.95) rotate(3.5deg); }
-  50% {
-    transform: scale(1) rotate(3.5deg); }
-  100% {
-    transform: scale(0.95) rotate(3.5deg); } }
-
-@keyframes btn-anim1 {
-  0% {
-    left: -100%; }
-  50%,
-  100% {
-    left: 100%; } }
-
-@keyframes btn-anim2 {
-  0% {
-    top: -100%; }
-  50%,
-  100% {
-    top: 100%; } }
-
-@keyframes btn-anim3 {
-  0% {
-    right: -100%; }
-  50%,
-  100% {
-    right: 100%; } }
-
-@keyframes btn-anim4 {
-  0% {
-    bottom: -100%; }
-  50%,
-  100% {
-    bottom: 100%; } }
-
-@keyframes sombraPulso {
-  0% {
-    text-shadow: 0 0 1px #171717, 0 0 10px #d8ff00; }
-  50% {
-    text-shadow: 0 0 2px #171717, 0 0 20px #d8ff00; }
-  100% {
-    text-shadow: 0 0 2px #171717, 0 0 10px #d8ff00; } }
-
-@keyframes lineaPulso {
-  0% {
-    background-size: 0 0; }
-  50% {
-    background-size: 20% 2px; }
-  100% {
-    background-size: 0 0; } }
-
-@keyframes viñetaDancing {
-  0% {
-    transform: rotate(0deg); }
-  50% {
-    transform: rotate(1.2deg); }
-  100% {
-    transform: rotate(0deg); } }
-
-@keyframes doblez {
-  0% {
-    transform: rotateX(90deg); }
-  100% {
-    transform: rotateX(0deg); } }
-
-@keyframes agrandamiento {
-  0% {
-    transform: scale(0); }
-  50% {
-    transform: scale(1.5); }
-  100% {
-    transform: scale(1); } }
-
-.viñeta {
-  transition: all 1s ease-out; }
-
-.viñeta:hover {
-  animation: viñetaDancing .8s infinite ease-out; }
-
-.logoTexto {
-  text-transform: uppercase;
-  text-transform: uppercase;
-  font-style: italic;
-  font-weight: 900;
-  color: #d8ff00;
-  font-size: 6.5vw;
-  transition: all 0.3s ease-in;
-  animation: sombraPulso 1.5s infinite ease-out; }
-
-.logoTexto:hover {
-  transform: scale(1.02);
-  /*     animation: viñetaDancing .8s infinite ease-out, sombraPulso 1.5s infinite;
- */ }
-
-.logoTexto:active {
-  color: #d8ff00;
-  font-size: 3.5vw; }
-
-.logoTexto-x {
-  font-weight: normal;
-  font-style: normal;
-  color: #fff;
-  transition: all 0.5s ease;
-  margin-left: 1.8%;
-  animation: sombraPulso 1.5s infinite; }
-
-.logoTexto-x:hover {
-  transform: rotate(90deg) scale(1.2); }
-
-/* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-transform: uppercase;
-  text-transform: uppercase;
-  font-style: italic;
-  font-weight: 900;
-  color: #d8ff00; }
-
-a {
-  text-decoration: none; }
-
-body {
-  background-color: #171717;
-  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: #f8f8f8;
-  overflow: hidden;
-  overflow-x: hidden;
-  text-decoration: none;
-  transition: all 0.5s ease-in;
-  animation: fade-in 2s; }
-
-@media screen and (max-width: 768px) {
-  .logoTexto {
-    font-size: 9vw; } }
