@@ -38,3 +38,8 @@ $neon2: #000 0 0 12px,
 $neon1: #000 0 0 12px,
     $primary 0 0 5px,
     $primary 0 0 10px;
+
+$enable-shadows: true !default;
+$enable-gradients: true !default;
+
+$gradient: linear-gradient(180deg, rgba($secondary, .15), rgba($primary, 0)) !default;

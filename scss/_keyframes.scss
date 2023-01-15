@@ -96,7 +96,7 @@
 
 @keyframes viñetaDancing {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(-1.2deg);
     }
 
     50% {
@@ -104,7 +104,7 @@
     }
 
     100% {
-        transform: rotate(0deg);
+        transform: rotate(-1.2deg);
     }
 }
 
@@ -129,5 +129,15 @@
 
     100% {
         transform: scale(1);
+    }
+}
+
+@keyframes desplegar {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
     }
 }

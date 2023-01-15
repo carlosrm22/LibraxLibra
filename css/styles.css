@@ -68,7 +68,7 @@ html {
   font-style: normal;
   color: #fff;
   transition: all 0.5s ease;
-  margin-left: 1.8%;
+  margin-left: 1.7% !important;
   animation: sombraPulso 1.5s infinite; }
 
 .logoTexto-x:hover {
@@ -161,6 +161,15 @@ body {
   text-shadow: 0 0 5px #888;
   transform: rotate(360deg) scale(1.1); }
 
+.navContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+button {
+  display: none; }
+
 nav ul li {
   list-style-type: none;
   background-image: radial-gradient(#ffcc00, #f3ff66);
@@ -235,11 +244,11 @@ nav ul li:hover {
 
 @keyframes viñetaDancing {
   0% {
-    transform: rotate(0deg); }
+    transform: rotate(-1.2deg); }
   50% {
     transform: rotate(1.2deg); }
   100% {
-    transform: rotate(0deg); } }
+    transform: rotate(-1.2deg); } }
 
 @keyframes doblez {
   0% {
@@ -255,11 +264,57 @@ nav ul li:hover {
   100% {
     transform: scale(1); } }
 
+@keyframes desplegar {
+  0% {
+    transform: scaleX(0); }
+  100% {
+    transform: scaleX(1); } }
+
 @media screen and (max-width: 768px) {
   .logoTexto {
     font-size: 9vw; }
-  .navMobile {
-    display: none; } }
+  button {
+    display: block; }
+  .dropbtn {
+    background-color: #00000000;
+    color: #d8ff00;
+    cursor: url(../assets/icons/guante.svg), auto;
+    border: 0;
+    transform: translate(2.5px, 1.5px);
+    font-size: 1.3rem; }
+  .fa-bars {
+    color: #d8ff00;
+    width: 200px; }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    animation: viñetaDancing 2s infinite ease-in-out;
+    z-index: 1; }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 200px;
+    height: 150px;
+    border-radius: 45%;
+    border-width: 0.5px;
+    border-color: #ffffff4c;
+    border-style: solid;
+    padding: 20px 0 0 !important;
+    box-shadow: 0 10px 100px 10px #d8ff00; }
+  .dropdown-content a {
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 900;
+    color: #d8ff00;
+    color: #f8f8f8;
+    text-decoration: none;
+    display: block; }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    animation: desplegar 0.5s; }
+  .logoTexto-x {
+    font-size: 9vw; } }
 
 /*!
    * Bootstrap Grid v5.2.3 (https://getbootstrap.com/)
@@ -313,7 +368,7 @@ nav ul li:hover {
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: "Victor Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-gradient: linear-gradient(180deg, rgba(255, 204, 0, 0.15), rgba(216, 255, 0, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
@@ -3283,7 +3338,7 @@ nav ul li:hover {
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: "Victor Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-gradient: linear-gradient(180deg, rgba(255, 204, 0, 0.15), rgba(216, 255, 0, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;

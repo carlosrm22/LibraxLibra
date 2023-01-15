@@ -3,8 +3,59 @@
         font-size: 9vw;
     }
 
-    .navMobile {
-        display: none;
+    button {
+        display: block;
     }
 
+    .dropbtn {
+        background-color: #00000000;
+        color: $primary;
+        cursor: url(../assets/icons/guante.svg), auto;
+        border: 0;
+        transform: translate(2.5px, 1.5px);
+        font-size: 1.3rem;
+    }
+
+    .fa-bars {
+        color: $primary;
+        width: 200px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        animation: viñetaDancing 2s infinite ease-in-out;
+        z-index: 1;
+    }
+
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: $gray-700;
+        min-width: 200px;
+        height: 150px;
+        border-radius: 45%;
+        border-width: 0.5px;
+        border-color: #ffffff4c;
+        border-style: solid;
+        padding: 20px 0 0 !important;
+        box-shadow: 0 10px 100px 10px $primary;
+    }
+
+    .dropdown-content a {
+        @include titles;
+        color: $gray-100;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        animation: desplegar 0.5s;
+    }
+
+    .logoTexto-x {
+        font-size: 9vw;
+    }
 }

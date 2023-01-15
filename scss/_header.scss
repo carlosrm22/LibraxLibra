@@ -47,6 +47,17 @@
     transform: rotate(360deg) scale(1.1);
 }
 
+.navContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+button {
+    display: none;
+}
+
 nav ul li {
     list-style-type: none;
     background-image: radial-gradient($secondary, $success);
