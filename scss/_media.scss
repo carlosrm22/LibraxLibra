@@ -3,6 +3,10 @@
         font-size: 9vw;
     }
 
+    .buscar {
+        display: none;
+    }
+
     button {
         display: block;
     }
@@ -27,7 +31,6 @@
         animation: viñetaDancing 2s infinite ease-in-out;
         z-index: 1;
     }
-
 
     .dropdown-content {
         display: none;
@@ -57,5 +60,21 @@
 
     .logoTexto-x {
         font-size: 9vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: $gray-800;
+        box-shadow: 0 0 10px 0 $gray-500;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
 }

@@ -31,6 +31,7 @@
   width: 100%; }
 
 * {
+  list-style-type: "🥊 ";
   padding: 0 !important;
   margin: 0 !important; }
 
@@ -75,6 +76,9 @@ html {
   transform: rotate(90deg) scale(1.2); }
 
 /* Headings */
+h1 {
+  font-size: 1.5rem; }
+
 h1,
 h2,
 h3,
@@ -109,9 +113,15 @@ a:active {
   font-size: 1.5rem; }
 
 strong {
-  color: #ffcc00;
-  text-shadow: 0 0 3px #d8ff00;
+  color: #f3ff66;
+  text-shadow: #000 0 0 12px, #d8ff00 0 0 5px, #d8ff00 0 0 10px;
   letter-spacing: 1px; }
+
+.text-italic {
+  font-style: oblique; }
+
+.text-left {
+  text-align: left; }
 
 body {
   background-color: #171717;
@@ -119,7 +129,28 @@ body {
   color: #f8f8f8;
   text-decoration: none; }
 
-/* Redes */
+.button {
+  border-radius: 5px;
+  box-shadow: 0 0 3px #d8ff00;
+  border: 0 #d8ff00;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
+  color: #d8ff00;
+  background-color: #171717;
+  cursor: url(../assets/icons/guante.svg), auto;
+  transition: all 1s ease;
+  padding: 0 8px !important; }
+
+.button:hover {
+  background-color: #d8ff00;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
+  color: #d8ff00;
+  color: #000;
+  box-shadow: 0 0 15px #fff; }
+
 .redes li {
   display: inline-block; }
 
@@ -183,6 +214,53 @@ nav ul li {
 nav ul li:hover {
   background-size: 100% 1px;
   transition: all 0.3s ease-in-out; }
+
+h1 {
+  text-shadow: #000 0 0 12px, #d8ff00 0 0 5px, #d8ff00 0 0 10px; }
+
+footer {
+  background-color: #171717;
+  text-align: center;
+  box-shadow: 0 -10px 10px -10px #333; }
+
+.mapa {
+  border: 0;
+  width: 100%;
+  height: 300px;
+  margin: 20px 0;
+  animation: doblez 2s ease-in-out;
+  transition: all 0.3s ease; }
+
+.fadeIn {
+  animation: fade-in 2s ease-in-out;
+  transition: all 0.3s ease; }
+
+.contamosCon {
+  box-shadow: 0 0 10px 0 #777;
+  border-radius: 10px 50px;
+  padding: 10px !important;
+  margin: 1vw 20vw !important;
+  animation: doblez 2s ease;
+  transition: all 0.3s ease; }
+
+.contamosCon:hover {
+  transform: scale(1.1) rotate(1deg); }
+
+#buscar {
+  max-width: min-content;
+  border-radius: 6px;
+  box-shadow: 0 0 3px #777;
+  transition: all 1s ease;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
+  color: #d8ff00;
+  text-shadow: 0 0 8px #d8ff00;
+  color: #d8ff00;
+  background-color: #000; }
+
+#buscar:hover {
+  box-shadow: 0 0 15px #fff; }
 
 @keyframes fade-in {
   0% {
@@ -273,6 +351,8 @@ nav ul li:hover {
 @media screen and (max-width: 768px) {
   .logoTexto {
     font-size: 9vw; }
+  .buscar {
+    display: none; }
   button {
     display: block; }
   .dropbtn {
@@ -315,6 +395,18 @@ nav ul li:hover {
     animation: desplegar 0.5s; }
   .logoTexto-x {
     font-size: 9vw; } }
+
+@media screen and (min-width: 768px) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #171717;
+    box-shadow: 0 0 10px 0 #777; }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%; } }
 
 /*!
    * Bootstrap Grid v5.2.3 (https://getbootstrap.com/)

@@ -4,3 +4,21 @@ body {
     color: $gray-100;
     text-decoration: none;
 }
+
+.button {
+    border-radius: 5px;
+    box-shadow: 0 0 3px $primary;
+    border: 0 $primary;
+    @include titles;
+    background-color: $gray-800;
+    cursor: $guante, auto;
+    transition: all 1s ease;
+    padding: 0 8px !important;
+}
+
+.button:hover {
+    background-color: $primary;
+    @include titles;
+    color: $black;
+    box-shadow: 0 0 15px $white;
+}

@@ -1,4 +1,8 @@
 /* Headings */
+h1 {
+    font-size: 1.5rem;
+}
+
 h1,
 h2,
 h3,
@@ -11,7 +15,7 @@ h6 {
 a {
     color: $white;
     text-decoration: none;
-    cursor: url(../assets/icons/guante.svg), auto;
+    cursor: $guante, auto;
     animation: agrandamiento 2s ease;
     transition: all 0.3s ease-out;
 }
@@ -31,7 +35,15 @@ a:active {
 }
 
 strong {
-    color: $secondary;
-    text-shadow: 0 0 3px $primary;
+    color: $success;
+    text-shadow: $neon1;
     letter-spacing: 1px;
+}
+
+.text-italic {
+    font-style: oblique;
+}
+
+.text-left {
+    text-align: left;
 }

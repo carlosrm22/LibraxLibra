@@ -1,4 +1,3 @@
-/* Redes */
 .redes li {
     display: inline-block;
 }
@@ -72,4 +71,8 @@ nav ul li {
 nav ul li:hover {
     background-size: 100% 1px;
     transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    text-shadow: $neon1;
 }
