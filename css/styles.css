@@ -37,8 +37,31 @@
 
 html {
   transition: all 0.5s ease-in;
-  animation: fade-in 2s;
+  animation: fade-in 2s; }
+
+body {
   overflow-x: hidden; }
+
+aside img {
+  width: 100%;
+  animation: fade-in 2s ease-in-out; }
+
+.scroll {
+  max-height: 100vh;
+  overflow-y: scroll; }
+
+.asideArticulo {
+  padding: 2% 10% !important;
+  margin: 2% 5% 10% !important;
+  background-color: #000;
+  box-shadow: 0 5px 10px 5px #777;
+  border-radius: 15px;
+  text-align: left; }
+
+.asideArticulo h4 {
+  text-align: center;
+  text-shadow: #000 0 0 12px, #d8ff00 0 0 5px, #d8ff00 0 0 10px;
+  margin-bottom: 10px !important; }
 
 .viñeta {
   transition: all 1s ease-out; }
@@ -116,6 +139,10 @@ strong {
   color: #f3ff66;
   text-shadow: #000 0 0 12px, #d8ff00 0 0 5px, #d8ff00 0 0 10px;
   letter-spacing: 1px; }
+
+.resaltado {
+  text-decoration: none;
+  animation: sombraPulso 2s infinite ease; }
 
 .text-italic {
   font-style: oblique; }
@@ -349,6 +376,8 @@ footer {
     transform: scaleX(1); } }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow-y: auto; }
   .logoTexto {
     font-size: 9vw; }
   .buscar {

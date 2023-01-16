@@ -13,5 +13,33 @@
 html {
     transition: all 0.5s ease-in;
     animation: fade-in 2s;
+}
+
+body {
     overflow-x: hidden;
+}
+
+aside img {
+    width: 100%;
+    animation: fade-in 2s ease-in-out;
+}
+
+.scroll {
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.asideArticulo {
+    padding: 2% 10% !important;
+    margin: 2% 5% 10% !important;
+    background-color: $black;
+    box-shadow: 0 5px 10px 5px $gray-500;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.asideArticulo h4 {
+    text-align: center;
+    text-shadow: $neon1;
+    margin-bottom: 10px !important;
 }

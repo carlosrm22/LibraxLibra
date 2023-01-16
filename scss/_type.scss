@@ -40,6 +40,11 @@ strong {
     letter-spacing: 1px;
 }
 
+.resaltado {
+    text-decoration: none;
+    animation: sombraPulso 2s infinite ease;
+}
+
 .text-italic {
     font-style: oblique;
 }
