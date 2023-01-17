@@ -1,14 +1,14 @@
+.fadeIn {
+    animation: fade-in 2s ease-in-out;
+    transition: all 0.3s ease;
+}
+
 .mapa {
     border: 0;
     width: 100%;
     height: 300px;
     margin: 20px 0;
     animation: doblez 2s ease-in-out;
-    transition: all 0.3s ease;
-}
-
-.fadeIn {
-    animation: fade-in 2s ease-in-out;
     transition: all 0.3s ease;
 }
 
@@ -19,8 +19,13 @@
     margin: 1vw 20vw !important;
     animation: doblez 2s ease;
     transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1) rotate(1deg);
+    }
 }
 
-.contamosCon:hover {
-    transform: scale(1.1) rotate(1deg);
+.rutaExploracion {
+    display: inline-block;
+    text-align: center;
 }

@@ -42,12 +42,12 @@
         background-color: $gray-700;
         min-width: 200px;
         height: 150px;
-        border-radius: 45%;
         border-width: 0.5px;
         border-color: #ffffff4c;
         border-style: solid;
         padding: 20px 0 0 !important;
         box-shadow: 0 10px 100px 10px $primary;
+        border-radius: 100px / 150px;
     }
 
     .dropdown-content a {
@@ -64,6 +64,22 @@
 
     .logoTexto-x {
         font-size: 9vw;
+    }
+
+    .rutaExploracion {
+        display: none;
+    }
+
+    .promocionInicio-texto {
+        h3 {
+            @include promocionTitulos;
+            font-size: 5vw;
+        }
+
+        ul {
+            @include promocionTexto;
+            font-size: 4.5vw;
+        }
     }
 }
 

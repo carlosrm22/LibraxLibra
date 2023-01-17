@@ -29,19 +29,21 @@ $extra-bold: 900;
 // stylelint-disable value-keyword-case
 $font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-monospace: "Victor Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-promociones: "baron", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 /* neon */
-$neon2: #000 0 0 12px,
-    $primary 0 0 24px,
-    $primary 0 0 36px;
+$neon1: 0 0 12px $black,
+    0 0 5px $primary,
+    0 0 10px $primary;
 
-$neon1: #000 0 0 12px,
-    $primary 0 0 5px,
-    $primary 0 0 10px;
+$neon2: 0 0 12px $black,
+    0 0 24px $primary,
+    0 0 36px $primary;
 
-$enable-shadows: true !default;
-$enable-gradients: true !default;
+$neon3: 0 0 5px $black,
+    0 0 13px $primary;
 
-$gradient: linear-gradient(180deg, rgba($secondary, .15), rgba($primary, 0)) !default;
+$neon4: 0 0 5px $black,
+    0 0 10px $white;
 
 $guante: url(../assets/icons/guante.svg);

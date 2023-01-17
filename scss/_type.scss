@@ -1,6 +1,7 @@
 /* Headings */
 h1 {
     font-size: 1.5rem;
+    text-shadow: $neon1;
 }
 
 h1,
@@ -16,22 +17,22 @@ a {
     color: $white;
     text-decoration: none;
     cursor: $guante, auto;
-    animation: agrandamiento 2s ease;
+    animation: agrandamiento ease;
     transition: all 0.3s ease-out;
-}
 
-a:hover {
-    @include titles;
-}
+    &:hover {
+        @include titles;
+    }
 
-a:active {
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(45deg, $secondary, $primary);
-    text-transform: uppercase;
-    font-size: 1.5rem;
+    &:active {
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(45deg, $secondary, $primary);
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
 }
 
 strong {

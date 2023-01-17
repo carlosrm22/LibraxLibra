@@ -3,3 +3,17 @@ footer {
     text-align: center;
     box-shadow: 0 -10px 10px -10px $gray-700;
 }
+
+.whatsFooter {
+    text-shadow: $neon2;
+    transition: all 0.5s ease-in-out;
+
+    i {
+        font-size: 1.5rem;
+        transition: all 0.5s ease-in-out;
+    }
+
+    &:hover {
+        transform: scale(5);
+    }
+}
