@@ -3,10 +3,12 @@
 
     h3 {
         @include promocionTitulos;
+        animation: whatsapp 2s infinite ease-in-out, sombraPulso 2s infinite ease-in-out;
     }
 
     ul {
         @include promocionTexto;
+        animation: viñetaDancing 2s infinite ease-in-out;
     }
 
     li {

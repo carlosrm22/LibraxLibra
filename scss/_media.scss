@@ -66,7 +66,10 @@
         font-size: 9vw;
     }
 
-    .rutaExploracion {
+    .pie {
+        box-shadow: 0 -1px $gray-600;
+        height: 0;
+        text-align: center;
         display: none;
     }
 
@@ -84,6 +87,7 @@
 }
 
 @media screen and (min-width: 768px) {
+
     header {
         position: sticky;
         top: 0;

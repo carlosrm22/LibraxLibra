@@ -19,4 +19,12 @@ body {
     overflow-x: hidden;
     transition: all 0.5s ease-in;
     animation: fade-in 2s;
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: $success;
+    }
 }
