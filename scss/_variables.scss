@@ -47,3 +47,8 @@ $neon4: 0 0 5px $black,
     0 0 10px $white;
 
 $guante: url(../assets/icons/guante.svg);
+
+$enable-shadows: true !default;
+$enable-gradients: true !default;
+
+$gradient: linear-gradient(180deg, rgba($secondary, .15), rgba($primary, 0)) !default;

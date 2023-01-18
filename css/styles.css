@@ -174,6 +174,18 @@ body {
   color: #000;
   box-shadow: 0 0 15px #fff; }
 
+.fondo1 {
+  background-image: radial-gradient(ellipse at center, #131313, #000000b3), url("../assets/images/galeria.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: inset 0 0 5px #333, 0 0 5px #777; }
+
+.fondo2 {
+  background-image: radial-gradient(ellipse at center, #000, #000000b3), url("../assets/images/Línea3.svg");
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: inset 0 0 5px #777, 0 0 5px #777; }
+
 .redes li {
   display: inline-block; }
   .redes li i {
@@ -236,6 +248,10 @@ nav ul li {
 button {
   display: none; }
 
+aside img {
+  max-width: 100%;
+  animation: fade-in 2s ease-in-out; }
+
 .promocionInicio-texto {
   position: relative; }
   .promocionInicio-texto h3 {
@@ -250,7 +266,8 @@ button {
     left: 3%;
     max-width: 50%;
     z-index: 1;
-    animation: whatsapp 2s infinite ease-in-out, sombraPulso 2s infinite ease-in-out; }
+    animation: whatsapp 2s infinite ease-in-out, sombraPulso 2s infinite ease-in-out;
+    transition: all 0.3s ease; }
   .promocionInicio-texto ul {
     font-family: "baron", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1.5vw;
@@ -261,13 +278,11 @@ button {
     left: 3%;
     max-width: 50%;
     z-index: 1;
-    animation: viñetaDancing 2s infinite ease-in-out; }
+    animation: viñetaDancing 2s infinite ease-in-out;
+    transition: all 0.3s ease; }
   .promocionInicio-texto li {
     list-style: none;
     padding: 5% 0 !important; }
-  .promocionInicio-texto img {
-    max-width: 100%;
-    animation: fade-in 2s ease-in-out; }
 
 .scroll {
   height: 100vh;
@@ -324,6 +339,9 @@ footer {
   transition: all 0.3s ease; }
   .contamosCon:hover {
     transform: scale(1.1) rotate(1deg); }
+
+.animacion {
+  animation: whatsapp 2s infinite ease-in-out, sombraPulso 2s infinite ease-in-out; }
 
 .politicaPrivacidad {
   display: block;
@@ -591,7 +609,7 @@ footer {
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: "Victor Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-gradient: linear-gradient(180deg, rgba(255, 204, 0, 0.15), rgba(216, 255, 0, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
@@ -3561,7 +3579,7 @@ footer {
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: "Victor Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-gradient: linear-gradient(180deg, rgba(255, 204, 0, 0.15), rgba(216, 255, 0, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;

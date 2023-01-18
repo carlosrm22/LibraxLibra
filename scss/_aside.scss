@@ -1,24 +1,28 @@
+aside {
+    img {
+        max-width: 100%;
+        animation: fade-in 2s ease-in-out;
+    }
+}
+
 .promocionInicio-texto {
     position: relative;
 
     h3 {
         @include promocionTitulos;
         animation: whatsapp 2s infinite ease-in-out, sombraPulso 2s infinite ease-in-out;
+        transition: all 0.3s ease;
     }
 
     ul {
         @include promocionTexto;
         animation: viñetaDancing 2s infinite ease-in-out;
+        transition: all 0.3s ease;
     }
 
     li {
         list-style: none;
         padding: 5% 0 !important;
-    }
-
-    img {
-        max-width: 100%;
-        animation: fade-in 2s ease-in-out;
     }
 }
 
