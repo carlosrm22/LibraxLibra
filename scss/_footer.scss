@@ -1,24 +1,33 @@
 footer {
     background-color: $gray-800;
     text-align: center;
-    box-shadow: 0 -10px 10px -10px $gray-700;
 }
 
 .whatsFooter {
-    text-shadow: $neon2;
+    text-shadow: $neon-3;
     transition: all 0.5s ease-in-out;
+    animation: sombraPulso 2s infinite ease-in-out;
 
     i {
         font-size: 1.5rem;
         transition: all 0.5s ease-in-out;
+        animation: rotar 6s ease-in-out infinite;
+        animation-delay: 4s;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
     }
 
     &:hover {
-        transform: scale(5);
+        transform: scale(1.2);
     }
 }
 
 .pie {
     box-shadow: 0 -1px $gray-600;
-    height: 50px;
+}
+
+.sticky-bottom {
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
 }

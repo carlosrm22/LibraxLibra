@@ -1,6 +1,5 @@
-.fadeIn {
+.fade-in {
     animation: fade-in 2s ease-in-out;
-    transition: all 0.3s ease;
 }
 
 .mapa {
@@ -9,22 +8,20 @@
     height: 300px;
     margin: 20px 0;
     animation: doblez 2s ease-in-out;
-    transition: all 0.3s ease;
 }
 
-.contamosCon {
-    box-shadow: 0 0 10px 0 $gray-500;
+.contamos-con {
     border-radius: 10px 50px;
-    padding: 10px !important;
-    margin: 1vw 20vw !important;
-    animation: doblez 2s ease;
-    transition: all 0.3s ease;
+    padding: 10px;
+    margin: 1vw 20vw;
 
     &:hover {
-        transform: scale(1.1) rotate(1deg);
+        animation: volumen 3s infinite ease-in-out;
+        transition: all 3s linear;
+        border-radius: 50px 10px;
     }
-}
 
-.animacion {
-    animation: whatsapp 2s infinite ease-in-out, sombraPulso 2s infinite ease-in-out;
+    .animation {
+        animation: whatsapp 2s infinite ease-in-out, sombraPulso 2s infinite ease-in-out;
+    }
 }

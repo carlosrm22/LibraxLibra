@@ -1,7 +1,6 @@
-/* Headings */
 h1 {
     font-size: 1.5rem;
-    text-shadow: $neon1;
+    text-shadow: $neon-1;
 }
 
 h1,
@@ -17,37 +16,33 @@ a {
     color: $white;
     text-decoration: none;
     cursor: $guante, auto;
-    animation: agrandamiento ease;
-    transition: all 0.3s ease-out;
+    transition: color 0.5s ease-in;
 
     &:hover {
         @include titles;
+        font-family: $font-family;
+        transition: color 1.3s ease-out;
     }
 
     &:active {
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        background-image: linear-gradient(45deg, $secondary, $primary);
-        font-size: 1.5rem;
-
-        &:target {
-            @include titles;
-        }
-
+        color: $success;
     }
 }
 
 strong {
     color: $success;
-    text-shadow: $neon1;
+    text-shadow: $neon-1;
     letter-spacing: 1px;
+    animation: pulse 1.5s infinite ease-in-out;
 }
 
 .resaltado {
     text-decoration: none;
-    animation: sombraPulso 2s infinite ease;
+    animation: pulse 1.5s infinite ease;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .text-italic {
@@ -56,6 +51,10 @@ strong {
 
 .text-left {
     text-align: left;
+}
+
+.text-shadow {
+    text-shadow: $neon-1;
 }
 
 .target {

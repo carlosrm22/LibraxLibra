@@ -3,28 +3,3 @@
         width: 10% * $i;
     }
 }
-
-@font-face {
-    font-family: "baron";
-    src: url(../assets/fonts/baron-neue.otf);
-}
-
-* {
-    list-style-type: "🥊 ";
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-body {
-    overflow-x: hidden;
-    transition: all 0.5s ease-in;
-    animation: fade-in 2s;
-
-    ::-webkit-scrollbar {
-        width: 8px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background-color: $success;
-    }
-}

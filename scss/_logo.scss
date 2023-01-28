@@ -1,24 +1,23 @@
 .viñeta {
-    transition: all 1s ease;
+    width: 100%;
 
     &:hover {
-        animation: viñetaDancing 2s infinite ease;
+        animation: volumen 2s ease-in-out infinite;
     }
 }
 
 .logoTexto {
     @include titles;
-    font-size: 6.5vw;
-    transition: all .3s ease-in;
-    animation: sombraPulso 1.5s infinite ease-out;
+    font-size: calc(180% + 2.5vw);
+    animation: pulse 1.8s infinite ease-out;
 
     &:hover {
-        transform: scale(1.02);
+        animation: pulse 1.5s infinite ease-in;
     }
 
     &:active {
-        color: $primary;
-        font-size: 3.5vw;
+        color: $success ;
+        transition: all 1s ease-in;
     }
 }
 
@@ -26,11 +25,10 @@
     font-weight: normal;
     font-style: normal;
     color: $white;
-    transition: all .5s ease;
-    margin-left: 1.7% !important;
-    animation: sombraPulso 1.5s infinite;
+    transition: all .3s ease-out;
+    animation: pulse 1.5s infinite;
 
     &:hover {
-        transform: rotate(90deg) scale(1.2);
+        transform: rotate(90deg);
     }
 }

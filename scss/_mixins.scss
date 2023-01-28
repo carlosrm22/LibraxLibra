@@ -11,13 +11,13 @@
     color: $primary;
 }
 
-@mixin promocionTitulos {
+@mixin promo-titles {
     font-family: $font-family-promociones;
     font-size: 2vw;
     font-style: normal;
     font-weight: 500;
     color: $success;
-    text-shadow: $neon3;
+    text-shadow: $neon-3;
     position: absolute;
     top: 13%;
     left: 3%;
@@ -25,14 +25,21 @@
     z-index: 1;
 }
 
-@mixin promocionTexto {
+@mixin promo-text {
     font-family: $font-family-promociones;
     font-size: 1.5vw;
     color: $white;
-    text-shadow: $neon4;
+    text-shadow: $neon-4;
     position: absolute;
     top: 37%;
     left: 3%;
     max-width: 50%;
     z-index: 1;
+}
+
+@mixin cristal {
+    background: #0a0a0a7f;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid #ffffff45;
 }

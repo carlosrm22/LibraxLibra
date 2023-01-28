@@ -2,7 +2,7 @@
     max-width: min-content;
     border-radius: 6px;
     box-shadow: 0 0 3px $gray-500;
-    transition: all 1s ease;
+    transition: all 1s ease-in-out;
     @include titles;
     text-shadow: 0 0 8px $primary;
     color: $primary;

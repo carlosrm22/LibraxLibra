@@ -1,11 +1,4 @@
 @media screen and (max-width: 768px) {
-    body {
-        overflow-y: auto;
-    }
-
-    .logoTexto {
-        font-size: 9vw;
-    }
 
     .buscar {
         display: none;
@@ -15,90 +8,72 @@
         display: block;
     }
 
-    .dropbtn {
-        background-color: #00000000;
-        color: $primary;
-        cursor: url(../assets/icons/guante.svg), auto;
-        border: 0;
-        transform: translate(2.5px, 1.5px);
-        font-size: 1.3rem;
-    }
-
     .fa-bars {
         color: $primary;
         width: 200px;
     }
 
+    .dropbtn {
+        background-color: #00000000;
+        cursor: url(../assets/icons/guante.svg), auto;
+        border: 0;
+        font-size: 1.3rem;
+    }
+
     .dropdown {
         position: relative;
         display: inline-block;
-        animation: viñetaDancing 2s infinite ease-in-out;
-        z-index: 1;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: $gray-700;
-        min-width: 200px;
-        height: 150px;
-        border-width: 0.5px;
-        border-color: #ffffff4c;
-        border-style: solid;
-        padding: 20px 0 0 !important;
-        box-shadow: 0 10px 100px 10px $primary;
-        border-radius: 100px / 150px;
-    }
-
-    .dropdown-content a {
-        @include titles;
-        color: $gray-100;
-        text-decoration: none;
-        display: block;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-        animation: desplegar 0.5s;
-    }
-
-    .logoTexto-x {
-        font-size: 9vw;
-    }
-
-    .pie {
-        box-shadow: 0 -1px $gray-600;
-        height: 0;
+        z-index: 10;
         text-align: center;
-        display: none;
+        animation: volumen 3s ease-in-out infinite;
+
+        &-content {
+            background: radial-gradient(circle at 70% 30%, #484848 13%, #292626 48%, #222222 53%, #000000 100%);
+            display: none;
+            position: absolute;
+            min-width: 208px;
+            min-height: 205px;
+            box-shadow: $neon-5;
+            border-radius: 170px / 220px;
+            border: none;
+
+
+            a {
+                @include titles;
+                color: $gray-100;
+                text-decoration: none;
+                padding: 10px 15px;
+                margin: 3px;
+                display: block;
+            }
+        }
+
+        &:hover {
+            .dropdown-content {
+                display: block;
+                transform-origin: top;
+                animation: squash .7s ease-out;
+            }
+        }
     }
 
-    .promocionInicio-texto {
+    .promo {
         h3 {
-            @include promocionTitulos;
+            @include promo-titles;
             font-size: 5vw;
         }
 
         ul {
-            @include promocionTexto;
+            @include promo-text;
             font-size: 4.5vw;
         }
     }
 }
 
 @media screen and (min-width: 768px) {
-
-    header {
+    .sticky-lg-top {
         position: sticky;
         top: 0;
         z-index: 100;
-        background-color: $gray-800;
-        box-shadow: 0 0 10px 0 $gray-500;
-    }
-
-    footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
     }
 }

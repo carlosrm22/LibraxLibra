@@ -3,8 +3,8 @@
         display: inline-block;
 
         i {
-            transition: transform 0.5s ease;
-            animation: doblez 2s ease;
+            animation: agrandamiento 0.7s ease-in-out;
+            transition: all 0.7s ease-out;
         }
 
         &-hover:hover {
@@ -21,7 +21,7 @@
             border-radius: 50%;
             font-size: 190%;
             color: $gray-600;
-            transition: 0.5s;
+            transition: all 0.5s linear;
 
             &::before {
                 position: absolute;
@@ -30,7 +30,6 @@
                 width: 100%;
                 height: 100%;
                 background: $white;
-                transition: 0.5s;
                 z-index: -1;
             }
 
@@ -46,37 +45,33 @@
             }
 
             &:active {
-                color: $warning;
-                box-shadow: 0 0 5px $primary;
+                color: $gray-300;
+                box-shadow: 0 0 5px $gray-300;
                 text-shadow: 0 0 5px $gray-600;
-                transform: rotate(360deg) scale(1.1);
+                transform: rotate(0) scale(.5);
             }
         }
     }
 }
 
-.navContent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.nav-content {
+    height: 25px;
 }
 
 nav {
     ul {
         li {
+            font-family: $font-family-promociones;
             list-style-type: none;
             background-image: radial-gradient($secondary, $success);
             background-position: 0 100%;
             background-size: 0 1px;
-            animation: agrandamiento 2s ease;
-            transition: background-size 0.3s;
+            animation: fade-in 3s;
             background-repeat: no-repeat;
-            padding: 0 15px;
 
             &:hover {
                 background-size: 100% 1px;
-                transition: all 0.3s ease-in-out;
+                transition: all 0.5s ease;
             }
         }
     }
