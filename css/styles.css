@@ -29,32 +29,40 @@
 .w-10 {
   width: 100%; }
 
-.viñeta {
-  width: 100%; }
-  .viñeta:hover {
+.logo {
+  transition: all 15ms ease-in-out;
+  -webkit-transition: all 15ms ease-in-out;
+  -moz-transition: all 15ms ease-in-out;
+  -ms-transition: all 15ms ease-in-out;
+  -o-transition: all 15ms ease-in-out; }
+  .logo:hover {
     animation: volumen 2s ease-in-out infinite; }
 
-.logoTexto {
+.logo-texto {
   text-transform: uppercase;
   font-style: italic;
   font-weight: 900;
   color: #d8ff00;
   text-align: center;
-  font-size: calc(180% + 2.5vw);
+  transition: all 0.2s ease-in;
   animation: pulse 1.8s infinite ease-out; }
-  .logoTexto:hover {
+  .logo-texto:hover {
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
     animation: pulse 1.5s infinite ease-in; }
-  .logoTexto:active {
+  .logo-texto:active {
     color: #f3ff66;
     transition: all 1s ease-in; }
 
-.logoTexto-x {
+.logo-texto-x {
   font-weight: normal;
   font-style: normal;
   color: #fff;
   transition: all .3s ease-out;
   animation: pulse 1.5s infinite; }
-  .logoTexto-x:hover {
+  .logo-texto-x:hover {
     transform: rotate(90deg); }
 
 h1 {
@@ -120,7 +128,9 @@ strong {
   color: #f3ff66; }
 
 * {
-  list-style-type: "🥊 "; }
+  list-style-type: "🥊 ";
+  margin: 0 !important;
+  padding: 0 !important; }
 
 @font-face {
   font-family: "baron";
@@ -471,6 +481,10 @@ footer {
     transform: rotate(720deg) scale(1.5); } }
 
 @media screen and (max-width: 768px) {
+  .logo {
+    min-width: 50vw; }
+  .logo-texto {
+    font-size: 10vw; }
   .buscar {
     display: none; }
   button {
@@ -506,8 +520,6 @@ footer {
         text-align: center;
         color: #f8f8f8;
         text-decoration: none;
-        padding: 10px 15px;
-        margin: 3px;
         display: block; }
     .dropdown:hover .dropdown-content {
       display: block;
@@ -538,11 +550,33 @@ footer {
     z-index: 1;
     font-size: 4.5vw; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 426px) {
+  .logo {
+    min-width: 25vw; }
+  .logo-texto {
+    font-size: 5vw; } }
+
+@media screen and (min-width: 1024px) {
   .sticky-lg-top {
     position: sticky;
     top: 0;
-    z-index: 100; } }
+    z-index: 100; }
+  .logo {
+    min-width: calc(20vw); }
+  .logo-texto {
+    font-size: calc(4vw); } }
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    min-width: calc(15vw); }
+  .logo-texto {
+    font-size: calc(4vw); } }
+
+@media screen and (min-width: 1440px) {
+  .logo {
+    min-width: calc(10vw); }
+  .logo-texto {
+    font-size: calc(3vw); } }
 
 /*!
    * Bootstrap Grid v5.2.3 (https://getbootstrap.com/)

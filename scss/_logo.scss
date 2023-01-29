@@ -1,17 +1,24 @@
-.viñeta {
-    width: 100%;
+.logo {
+    transition: all 15ms ease-in-out;
+    -webkit-transition: all 15ms ease-in-out;
+    -moz-transition: all 15ms ease-in-out;
+    -ms-transition: all 15ms ease-in-out;
+    -o-transition: all 15ms ease-in-out;
 
     &:hover {
         animation: volumen 2s ease-in-out infinite;
     }
 }
 
-.logoTexto {
-    @include titles;
-    font-size: calc(180% + 2.5vw);
+.logo-texto {
+    @include titles transition: all 0.2s ease-in;
     animation: pulse 1.8s infinite ease-out;
 
     &:hover {
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -ms-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
         animation: pulse 1.5s infinite ease-in;
     }
 
@@ -21,7 +28,7 @@
     }
 }
 
-.logoTexto-x {
+.logo-texto-x {
     font-weight: normal;
     font-style: normal;
     color: $white;

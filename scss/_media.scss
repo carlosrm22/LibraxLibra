@@ -1,4 +1,11 @@
 @media screen and (max-width: 768px) {
+    .logo {
+        min-width: 50vw;
+    }
+
+    .logo-texto {
+        font-size: 10vw;
+    }
 
     .buscar {
         display: none;
@@ -37,13 +44,10 @@
             border-radius: 170px / 220px;
             border: none;
 
-
             a {
                 @include titles;
                 color: $gray-100;
                 text-decoration: none;
-                padding: 10px 15px;
-                margin: 3px;
                 display: block;
             }
         }
@@ -70,10 +74,48 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 426px) {
+    .logo {
+        min-width: 25vw;
+    }
+
+    .logo-texto {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
     .sticky-lg-top {
         position: sticky;
         top: 0;
         z-index: 100;
+    }
+
+    .logo {
+        min-width: calc(20vw);
+    }
+
+    .logo-texto {
+        font-size: calc(4vw);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        min-width: calc(15vw);
+    }
+
+    .logo-texto {
+        font-size: calc(4vw);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .logo {
+        min-width: calc(10vw);
+    }
+
+    .logo-texto {
+        font-size: calc(3vw);
     }
 }
