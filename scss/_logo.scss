@@ -1,9 +1,9 @@
 .logo {
-    transition: all 15ms ease-in-out;
-    -webkit-transition: all 15ms ease-in-out;
-    -moz-transition: all 15ms ease-in-out;
-    -ms-transition: all 15ms ease-in-out;
-    -o-transition: all 15ms ease-in-out;
+    width: calc() 25vw;
+    -webkit-transition: all 0.2s ease-i;
+    -moz-transition: all 0.2s ease-i;
+    -ms-transition: all 0.2s ease-i;
+    -o-transition: all 0.2s ease-i;
 
     &:hover {
         animation: volumen 2s ease-in-out infinite;
@@ -12,6 +12,7 @@
 
 .logo-texto {
     @include titles transition: all 0.2s ease-in;
+    font-size: calc();
     animation: pulse 1.8s infinite ease-out;
 
     &:hover {

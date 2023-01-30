@@ -20,6 +20,8 @@
   "homepage": "https://github.com/carlosrm22/lxl#readme",
   "dependencies": {
     "bootstrap": "^5.2.3",
-    "bootstrap-icons": "^1.10.3"
+    "bootstrap-icons": "^1.10.3",
+    "bootstrap-sass": "^3.4.3",
+    "sass-math": "^1.0.0"
   }
 }

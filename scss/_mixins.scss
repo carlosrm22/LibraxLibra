@@ -13,7 +13,7 @@
 
 @mixin promo-titles {
     font-family: $font-family-promociones;
-    font-size: 2vw;
+    /*     font-size: 2vw; */
     font-style: normal;
     font-weight: 500;
     color: $success;
@@ -27,7 +27,7 @@
 
 @mixin promo-text {
     font-family: $font-family-promociones;
-    font-size: 1.5vw;
+    /*     font-size: 1.5vw; */
     color: $white;
     text-shadow: $neon-4;
     position: absolute;

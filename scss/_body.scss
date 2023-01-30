@@ -1,18 +1,16 @@
+@font-face {
+    font-family: "baron";
+    src: url(../assets/fonts/baron-neue.otf);
+}
+
 * {
     list-style-type: "🥊 ";
     margin: 0 !important;
     padding: 0 !important;
 }
 
-@font-face {
-    font-family: "baron";
-    src: url(../assets/fonts/baron-neue.otf);
-}
-
-
 body {
     background-color: $gray-900;
-    overflow-x: hidden;
     font-family: $font-family;
     color: $gray-100;
     text-decoration: none;
