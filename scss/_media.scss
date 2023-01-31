@@ -89,15 +89,13 @@
         }
     }
 
-    .promo {
+    .promo-text {
         h3 {
-            @include promo-titles;
-            font-size: 5vw;
+            font-size: 4vw;
         }
 
         ul {
-            @include promo-text;
-            font-size: 4.5vw;
+            display: none;
         }
     }
 }
@@ -109,6 +107,20 @@
 
     .logo-texto {
         font-size: 5vw;
+    }
+
+    .promo-text {
+        top: 18%;
+        left: 35%;
+        max-width: 30%;
+
+        h3 {
+            font-size: 2vw;
+        }
+
+        ul {
+            font-size: 1.5vw;
+        }
     }
 }
 
@@ -126,6 +138,30 @@
     .logo-texto {
         font-size: 4vw;
     }
+
+    .promo-text {
+        width: auto;
+
+        h3 {
+            font-size: 2.1vw;
+        }
+
+        ul {
+            font-size: 1.4vw;
+        }
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .promo-text {
+        h3 {
+            font-size: 1.5vw;
+        }
+
+        ul {
+            display: 2vw;
+        }
+    }
 }
 
 @media screen and (min-width: 2560px) {
@@ -133,7 +169,9 @@
         min-width: 250px;
     }
 
-    .logo-texto {
-        font-size: 80px;
+    .promo-text {
+        ul {
+            display: none;
+        }
     }
 }

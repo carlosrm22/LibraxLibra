@@ -3811,7 +3811,6 @@ strong {
   src: url(../assets/fonts/baron-neue.otf); }
 
 * {
-  list-style-type: "🥊 ";
   margin: 0 !important;
   padding: 0 !important; }
 
@@ -3871,41 +3870,16 @@ body {
   background-size: cover;
   box-shadow: inset 0 0 5px #777, 0 0 5px #777; }
 
-.article {
-  background-color: #000;
-  text-align: left;
-  border-radius: 11px; }
+.box-animation {
+  border-radius: 10px 50px; }
+  .box-animation:hover {
+    animation: volumen 3s infinite ease-in-out;
+    transition: all 3s linear;
+    border-radius: 50px 10px; }
 
-.promo {
-  position: relative; }
-  .promo h3 {
-    font-family: "baron", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    /*     font-size: 2vw; */
-    font-style: normal;
-    font-weight: 500;
-    color: #f3ff66;
-    text-shadow: 0 0 5px #000, 0 0 13px #d8ff00;
-    position: absolute;
-    top: 13%;
-    left: 3%;
-    max-width: 50%;
-    z-index: 1;
-    animation: whatsapp 2s infinite ease-in-out, sombraPulso 2s infinite ease-in-out;
-    -webkit-animation: whatsapp 2s infinite ease-in-out, sombraPulso 2s infinite ease-in-out; }
-  .promo ul {
-    font-family: "baron", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    /*     font-size: 1.5vw; */
-    color: #fff;
-    text-shadow: 0 0 5px #000, 0 0 10px #fff;
-    position: absolute;
-    top: 37%;
-    left: 3%;
-    max-width: 50%;
-    z-index: 1;
-    animation: dancing 2s infinite ease-in-out; }
-  .promo li {
-    list-style: none;
-    padding: 5% 0; }
+.fade-in {
+  animation: fade-in 2s ease-in-out;
+  -webkit-animation: fade-in 2s ease-in-out; }
 
 .cristal {
   background: #ffffff45;
@@ -3994,21 +3968,50 @@ button {
   bottom: 0;
   z-index: 100; }
 
-.fade-in {
-  animation: fade-in 2s ease-in-out; }
-
 .mapa {
   border: 0;
   width: 100%;
   height: 300px;
-  animation: doblez 2s ease-in-out; }
+  animation: doblez 2s ease-in-out;
+  -webkit-animation: doblez 2s ease-in-out; }
 
-.border-animation {
-  border-radius: 10px 50px; }
-  .border-animation:hover {
-    animation: volumen 3s infinite ease-in-out;
-    transition: all 3s linear;
-    border-radius: 50px 10px; }
+li {
+  list-style-type: "🥊 "; }
+
+.article {
+  background-color: #000;
+  text-align: left;
+  border-radius: 11px; }
+
+.promo {
+  position: relative;
+  width: 33.33333%;
+  animation: fade-in 3s ease-in-out;
+  -webkit-animation: fade-in 3s ease-in-out; }
+  .promo img {
+    width: 100%;
+    border-radius: 10px; }
+  .promo .promo-text {
+    position: absolute;
+    top: 11%;
+    left: 0;
+    max-width: 100%;
+    z-index: 1; }
+    .promo .promo-text h3 {
+      font-family: "baron", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-style: normal;
+      color: #f3ff66;
+      text-shadow: 0 0 5px #000, 0 0 13px #d8ff00;
+      animation: whatsapp 2s infinite ease-in-out, sombraPulso 2s infinite ease-in-out;
+      -webkit-animation: whatsapp 2s infinite ease-in-out, sombraPulso 2s infinite ease-in-out; }
+    .promo .promo-text ul {
+      font-family: "baron", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      color: #fff;
+      text-shadow: 0 0 5px #000, 0 0 10px #fff;
+      animation: dancing 2s infinite ease-in-out;
+      -webkit-animation: dancing 2s infinite ease-in-out; }
+      .promo .promo-text ul li {
+        list-style: none; }
 
 .politicaPrivacidad {
   display: block;
@@ -4211,36 +4214,24 @@ button {
       display: block;
       transform-origin: top;
       animation: squash .7s ease-out; }
-  .promo h3 {
-    font-family: "baron", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    /*     font-size: 2vw; */
-    font-style: normal;
-    font-weight: 500;
-    color: #f3ff66;
-    text-shadow: 0 0 5px #000, 0 0 13px #d8ff00;
-    position: absolute;
-    top: 13%;
-    left: 3%;
-    max-width: 50%;
-    z-index: 1;
-    font-size: 5vw; }
-  .promo ul {
-    font-family: "baron", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    /*     font-size: 1.5vw; */
-    color: #fff;
-    text-shadow: 0 0 5px #000, 0 0 10px #fff;
-    position: absolute;
-    top: 37%;
-    left: 3%;
-    max-width: 50%;
-    z-index: 1;
-    font-size: 4.5vw; } }
+  .promo-text h3 {
+    font-size: 4vw; }
+  .promo-text ul {
+    display: none; } }
 
 @media screen and (min-width: 768px) {
   .logo {
     min-width: 25vw; }
   .logo-texto {
-    font-size: 5vw; } }
+    font-size: 5vw; }
+  .promo-text {
+    top: 18%;
+    left: 35%;
+    max-width: 30%; }
+    .promo-text h3 {
+      font-size: 2vw; }
+    .promo-text ul {
+      font-size: 1.5vw; } }
 
 @media screen and (min-width: 1024px) {
   .sticky-top {
@@ -4250,10 +4241,22 @@ button {
   .logo {
     min-width: 13vw; }
   .logo-texto {
-    font-size: 4vw; } }
+    font-size: 4vw; }
+  .promo-text {
+    width: auto; }
+    .promo-text h3 {
+      font-size: 2.1vw; }
+    .promo-text ul {
+      font-size: 1.4vw; } }
+
+@media screen and (min-width: 1800px) {
+  .promo-text h3 {
+    font-size: 1.5vw; }
+  .promo-text ul {
+    display: 2vw; } }
 
 @media screen and (min-width: 2560px) {
   .logo {
     min-width: 250px; }
-  .logo-texto {
-    font-size: 80px; } }
+  .promo-text ul {
+    display: none; } }
