@@ -9,16 +9,12 @@
     animation: doblez 2s ease-in-out;
 }
 
-.contamos-con {
+.border-animation {
     border-radius: 10px 50px;
 
     &:hover {
         animation: volumen 3s infinite ease-in-out;
         transition: all 3s linear;
         border-radius: 50px 10px;
-    }
-
-    .animation {
-        animation: whatsapp 2s infinite ease-in-out, sombraPulso 2s infinite ease-in-out;
     }
 }

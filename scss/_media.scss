@@ -16,10 +16,6 @@
     main {
         display: none;
     }
-
-    footer {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -72,11 +68,15 @@
             border-radius: 170px / 220px;
             border: none;
 
-            a {
-                @include titles;
-                color: $gray-100;
-                text-decoration: none;
-                display: block;
+            li {
+                background: none;
+
+                a {
+                    @include titles;
+                    color: $gray-100;
+                    text-decoration: none;
+                    display: block;
+                }
             }
         }
 

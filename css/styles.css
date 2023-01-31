@@ -3820,7 +3820,8 @@ body {
   font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #f8f8f8;
   text-decoration: none;
-  animation: fade-in 1.5s ease-out; }
+  animation: fade-in 1.5s ease-out;
+  -webkit-animation: fade-in 1.5s ease-out; }
 
 .bg {
   background-color: #171717; }
@@ -3845,7 +3846,8 @@ body {
   text-align: center;
   background-color: #171717;
   cursor: url(../assets/icons/guante.svg), auto;
-  transition: all 1s ease-in; }
+  transition: all 1s ease-in;
+  -webkit-transition: all 1s ease-in; }
 
 .button:hover {
   background-color: #d8ff00;
@@ -3888,7 +3890,8 @@ body {
     left: 3%;
     max-width: 50%;
     z-index: 1;
-    animation: whatsapp 2s infinite ease-in-out, sombraPulso 2s infinite ease-in-out; }
+    animation: whatsapp 2s infinite ease-in-out, sombraPulso 2s infinite ease-in-out;
+    -webkit-animation: whatsapp 2s infinite ease-in-out, sombraPulso 2s infinite ease-in-out; }
   .promo ul {
     font-family: "baron", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     /*     font-size: 1.5vw; */
@@ -4000,14 +4003,12 @@ button {
   height: 300px;
   animation: doblez 2s ease-in-out; }
 
-.contamos-con {
+.border-animation {
   border-radius: 10px 50px; }
-  .contamos-con:hover {
+  .border-animation:hover {
     animation: volumen 3s infinite ease-in-out;
     transition: all 3s linear;
     border-radius: 50px 10px; }
-  .contamos-con .animation {
-    animation: whatsapp 2s infinite ease-in-out, sombraPulso 2s infinite ease-in-out; }
 
 .politicaPrivacidad {
   display: block;
@@ -4159,8 +4160,6 @@ button {
   header h1 {
     display: none; }
   main {
-    display: none; }
-  footer {
     display: none; } }
 
 @media screen and (max-width: 768px) {
@@ -4197,15 +4196,17 @@ button {
       box-shadow: 0 10px 100px 10px #d8ff00;
       border-radius: 170px / 220px;
       border: none; }
-      .dropdown-content a {
-        text-transform: uppercase;
-        font-style: italic;
-        font-weight: 900;
-        color: #d8ff00;
-        text-align: center;
-        color: #f8f8f8;
-        text-decoration: none;
-        display: block; }
+      .dropdown-content li {
+        background: none; }
+        .dropdown-content li a {
+          text-transform: uppercase;
+          font-style: italic;
+          font-weight: 900;
+          color: #d8ff00;
+          text-align: center;
+          color: #f8f8f8;
+          text-decoration: none;
+          display: block; }
     .dropdown:hover .dropdown-content {
       display: block;
       transform-origin: top;
