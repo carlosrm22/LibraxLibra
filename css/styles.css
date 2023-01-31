@@ -3946,22 +3946,22 @@ nav ul li {
 button {
   display: none; }
 
-.whatsFooter {
+footer i {
+  text-shadow: 0 0 12px #000, 0 0 5px #d8ff00, 0 0 10px #d8ff00; }
+
+footer span {
   text-shadow: 0 0 5px #000, 0 0 13px #d8ff00;
   transition: all 0.5s ease-in-out;
   animation: sombraPulso 2s infinite ease-in-out; }
-  .whatsFooter i {
+  footer span i {
     font-size: 1.5rem;
     transition: all 0.5s ease-in-out;
     animation: rotar 6s ease-in-out infinite;
     animation-delay: 4s;
     animation-direction: alternate;
     animation-fill-mode: forwards; }
-  .whatsFooter:hover {
+  footer span:hover {
     transform: scale(1.2); }
-
-.pie {
-  box-shadow: 0 -1px #888; }
 
 .sticky-bottom {
   position: sticky;

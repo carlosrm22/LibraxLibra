@@ -1,24 +1,26 @@
-.whatsFooter {
-    text-shadow: $neon-3;
-    transition: all 0.5s ease-in-out;
-    animation: sombraPulso 2s infinite ease-in-out;
-
+footer {
     i {
-        font-size: 1.5rem;
+        text-shadow: $neon-1;
+    }
+
+    span {
+        text-shadow: $neon-3;
         transition: all 0.5s ease-in-out;
-        animation: rotar 6s ease-in-out infinite;
-        animation-delay: 4s;
-        animation-direction: alternate;
-        animation-fill-mode: forwards;
-    }
+        animation: sombraPulso 2s infinite ease-in-out;
 
-    &:hover {
-        transform: scale(1.2);
-    }
-}
+        i {
+            font-size: 1.5rem;
+            transition: all 0.5s ease-in-out;
+            animation: rotar 6s ease-in-out infinite;
+            animation-delay: 4s;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+        }
 
-.pie {
-    box-shadow: 0 -1px $gray-600;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
 }
 
 .sticky-bottom {
