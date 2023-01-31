@@ -1,31 +1,34 @@
 .logo {
-    width: calc() 25vw;
-    -webkit-transition: all 0.2s ease-i;
-    -moz-transition: all 0.2s ease-i;
-    -ms-transition: all 0.2s ease-i;
-    -o-transition: all 0.2s ease-i;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
 
     &:hover {
         animation: volumen 2s ease-in-out infinite;
+        -webkit-animation: volumen 2s ease-in-out infinite;
     }
 }
 
 .logo-texto {
-    @include titles transition: all 0.2s ease-in;
-    font-size: calc();
+    @include titles;
+    transition: all 0.2s ease-in;
     animation: pulse 1.8s infinite ease-out;
+    -webkit-animation: pulse 1.8s infinite ease-out;
 
     &:hover {
-        -webkit-transition: all 0.2s ease-in;
-        -moz-transition: all 0.2s ease-in;
-        -ms-transition: all 0.2s ease-in;
-        -o-transition: all 0.2s ease-in;
-        animation: pulse 1.5s infinite ease-in;
-    }
+        animation: dancing 3s infinite ease-in-out, pulse 1.8s infinite ease-out;
+        -webkit-animation: dancing 3s infinite ease-in-out, pulse 1.8s infinite ease-out;
+        -webkit-transition: all 3s ease-in-out, pulse 1.8s infinite ease-out;
+        -moz-transition: all 3s ease-in-out, pulse 1.8s infinite ease-out;
+        -ms-transition: all 3s ease-in-out, pulse 1.8s infinite ease-out;
+        -o-transition: all 3s ease-in-out, pulse 1.8s infinite ease-out;
 
-    &:active {
-        color: $success ;
-        transition: all 1s ease-in;
+        &:active {
+            color: $success ;
+            transition: all 1s ease-in;
+        }
     }
 }
 
@@ -35,6 +38,7 @@
     color: $white;
     transition: all .3s ease-out;
     animation: pulse 1.5s infinite;
+    -webkit-animation: pulse 1.5s infinite;
 
     &:hover {
         transform: rotate(90deg);

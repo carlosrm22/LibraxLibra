@@ -1,4 +1,32 @@
+@media screen and (max-width: 250px) {
+    header {
+        div > :nth-child(2) {
+            display: none;
+        }
+
+        ul {
+            display: none;
+        }
+
+        h1 {
+            display: none;
+        }
+    }
+
+    main {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    h1 {
+        font-size: 5vw;
+    }
+
     .logo {
         min-width: 50vw;
     }
@@ -74,7 +102,7 @@
     }
 }
 
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 768px) {
     .logo {
         min-width: 25vw;
     }
@@ -85,37 +113,27 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .sticky-lg-top {
+    .sticky-top {
         position: sticky;
         top: 0;
         z-index: 100;
     }
 
     .logo {
-        min-width: calc(20vw);
+        min-width: 13vw;
     }
 
     .logo-texto {
-        font-size: calc(4vw);
+        font-size: 4vw;
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 2560px) {
     .logo {
-        min-width: calc(15vw);
+        min-width: 250px;
     }
 
     .logo-texto {
-        font-size: calc(4vw);
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .logo {
-        min-width: calc(10vw);
-    }
-
-    .logo-texto {
-        font-size: calc(3vw);
+        font-size: 80px;
     }
 }

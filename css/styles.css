@@ -3709,13 +3709,14 @@
   width: 100%; }
 
 .logo {
-  width: calc() 25vw;
-  -webkit-transition: all 0.2s ease-i;
-  -moz-transition: all 0.2s ease-i;
-  -ms-transition: all 0.2s ease-i;
-  -o-transition: all 0.2s ease-i; }
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in; }
   .logo:hover {
-    animation: volumen 2s ease-in-out infinite; }
+    animation: volumen 2s ease-in-out infinite;
+    -webkit-animation: volumen 2s ease-in-out infinite; }
 
 .logo-texto {
   text-transform: uppercase;
@@ -3724,24 +3725,26 @@
   color: #d8ff00;
   text-align: center;
   transition: all 0.2s ease-in;
-  font-size: calc();
-  animation: pulse 1.8s infinite ease-out; }
+  animation: pulse 1.8s infinite ease-out;
+  -webkit-animation: pulse 1.8s infinite ease-out; }
   .logo-texto:hover {
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    animation: pulse 1.5s infinite ease-in; }
-  .logo-texto:active {
-    color: #f3ff66;
-    transition: all 1s ease-in; }
+    animation: dancing 3s infinite ease-in-out, pulse 1.8s infinite ease-out;
+    -webkit-animation: dancing 3s infinite ease-in-out, pulse 1.8s infinite ease-out;
+    -webkit-transition: all 3s ease-in-out, pulse 1.8s infinite ease-out;
+    -moz-transition: all 3s ease-in-out, pulse 1.8s infinite ease-out;
+    -ms-transition: all 3s ease-in-out, pulse 1.8s infinite ease-out;
+    -o-transition: all 3s ease-in-out, pulse 1.8s infinite ease-out; }
+    .logo-texto:hover:active {
+      color: #f3ff66;
+      transition: all 1s ease-in; }
 
 .logo-texto-x {
   font-weight: normal;
   font-style: normal;
   color: #fff;
   transition: all .3s ease-out;
-  animation: pulse 1.5s infinite; }
+  animation: pulse 1.5s infinite;
+  -webkit-animation: pulse 1.5s infinite; }
   .logo-texto-x:hover {
     transform: rotate(90deg); }
 
@@ -4148,7 +4151,21 @@ button {
   100% {
     transform: rotate(720deg) scale(1.5); } }
 
+@media screen and (max-width: 250px) {
+  header div > :nth-child(2) {
+    display: none; }
+  header ul {
+    display: none; }
+  header h1 {
+    display: none; }
+  main {
+    display: none; }
+  footer {
+    display: none; } }
+
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 5vw; }
   .logo {
     min-width: 50vw; }
   .logo-texto {
@@ -4218,30 +4235,24 @@ button {
     z-index: 1;
     font-size: 4.5vw; } }
 
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 768px) {
   .logo {
     min-width: 25vw; }
   .logo-texto {
     font-size: 5vw; } }
 
 @media screen and (min-width: 1024px) {
-  .sticky-lg-top {
+  .sticky-top {
     position: sticky;
     top: 0;
     z-index: 100; }
   .logo {
-    min-width: calc(20vw); }
+    min-width: 13vw; }
   .logo-texto {
-    font-size: calc(4vw); } }
+    font-size: 4vw; } }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 2560px) {
   .logo {
-    min-width: calc(15vw); }
+    min-width: 250px; }
   .logo-texto {
-    font-size: calc(4vw); } }
-
-@media screen and (min-width: 1440px) {
-  .logo {
-    min-width: calc(10vw); }
-  .logo-texto {
-    font-size: calc(3vw); } }
+    font-size: 80px; } }
