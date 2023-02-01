@@ -9,6 +9,7 @@
 }
 
 body {
+    overflow-x: hidden;
     background-color: $gray-900;
     font-family: $font-family;
     color: $gray-100;
