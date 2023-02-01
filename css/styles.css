@@ -3817,6 +3817,7 @@ strong {
 body {
   overflow-x: hidden;
   background-color: #131313;
+  min-height: 100vh;
   font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #f8f8f8;
   text-decoration: none;
@@ -3967,7 +3968,7 @@ footer span {
 .sticky-bottom {
   position: sticky;
   bottom: 0;
-  z-index: 100; }
+  z-index: 200; }
 
 .mapa {
   border: 0;
