@@ -3678,6 +3678,220 @@
   .d-print-none {
     display: none !important; } }
 
+@media screen and (max-width: 250px) {
+  header div > :nth-child(2) {
+    display: none; }
+  header ul {
+    display: none; }
+  header h1 {
+    display: none; }
+  main {
+    display: none; }
+  footer {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 5vw; }
+  .logo {
+    min-width: 50vw; }
+  .logo-texto {
+    font-size: 10vw; }
+  .buscar {
+    display: none; }
+  button {
+    display: block; }
+  .fa-bars {
+    color: #d8ff00;
+    width: 200px; }
+  .dropbtn {
+    background-color: #00000000;
+    cursor: url(../assets/icons/guante.svg), auto;
+    border: 0;
+    font-size: 1.3rem; }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    text-align: center;
+    animation: volumen 3s ease-in-out infinite; }
+    .dropdown-content {
+      background: radial-gradient(circle at 70% 30%, #484848 13%, #292626 48%, #222222 53%, #000000 100%);
+      display: none;
+      position: absolute;
+      min-width: 208px;
+      min-height: 205px;
+      box-shadow: 0 10px 100px 10px #d8ff00;
+      border-radius: 170px / 220px;
+      border: none; }
+      .dropdown-content li {
+        background: none; }
+        .dropdown-content li a {
+          text-transform: uppercase;
+          font-style: italic;
+          font-weight: 900;
+          color: #d8ff00;
+          text-align: center;
+          color: #f8f8f8;
+          text-decoration: none;
+          display: block; }
+    .dropdown:hover .dropdown-content {
+      display: block;
+      transform-origin: top;
+      animation: squash .7s ease-out; }
+  .promo-text h3 {
+    font-size: 4vw; }
+  .promo-text ul {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  .logo {
+    min-width: 25vw; }
+  .logo-texto {
+    font-size: 5vw; }
+  .promo-text {
+    top: 18%;
+    left: 35%;
+    max-width: 30%; }
+    .promo-text h3 {
+      font-size: 2vw; }
+    .promo-text ul {
+      font-size: 1.5vw; } }
+
+@media screen and (min-width: 1024px) {
+  .sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 100; }
+  .logo {
+    min-width: 13vw; }
+  .logo-texto {
+    font-size: 4vw; }
+  .promo-text {
+    width: auto; }
+    .promo-text h3 {
+      font-size: 2.1vw; }
+    .promo-text ul {
+      font-size: 1.4vw; } }
+
+@media screen and (min-width: 1800px) {
+  .promo-text h3 {
+    font-size: 1.5vw; }
+  .promo-text ul {
+    display: 2vw; } }
+
+@media screen and (min-width: 2560px) {
+  .logo {
+    min-width: 250px; }
+  .promo-text ul {
+    display: none; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes volumen {
+  0% {
+    transform: perspective(500px) rotateX(12deg); }
+  50% {
+    transform: perspective(500px) rotateX(-12deg); }
+  100% {
+    transform: perspective(500px) rotateX(12deg); } }
+
+@keyframes whatsapp {
+  0% {
+    transform: scale(0.95) rotate(3.5deg); }
+  50% {
+    transform: scale(1) rotate(3.5deg); }
+  100% {
+    transform: scale(0.95) rotate(3.5deg); } }
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%; }
+  50%,
+  100% {
+    left: 100%; } }
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%; }
+  50%,
+  100% {
+    top: 100%; } }
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%; }
+  50%,
+  100% {
+    right: 100%; } }
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%; }
+  50%,
+  100% {
+    bottom: 100%; } }
+
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 1px #171717, 0 0 10px #d8ff00; }
+  50% {
+    text-shadow: 0 0 2px #171717, 0 0 20px #d8ff00; }
+  100% {
+    text-shadow: 0 0 2px #171717, 0 0 10px #d8ff00; } }
+
+@keyframes lineaPulso {
+  0% {
+    background-size: 0 0; }
+  50% {
+    background-size: 20% 2px; }
+  100% {
+    background-size: 0 0; } }
+
+@keyframes dancing {
+  0% {
+    transform: rotate(0); }
+  25% {
+    transform: rotate(-1deg); }
+  75% {
+    transform: rotate(1deg); }
+  100% {
+    transform: rotate(0); } }
+
+@keyframes doblez {
+  0% {
+    transform: rotateX(90deg); }
+  100% {
+    transform: rotateX(0deg); } }
+
+@keyframes agrandamiento {
+  0% {
+    transform: scale(0) scaleX(-3); }
+  50% {
+    transform: scale(1.3); }
+  100% {
+    transform: scale(1) scaleX(1); } }
+
+@keyframes squash {
+  0% {
+    transform: scaleY(0); }
+  100% {
+    transform: scaleY(1); } }
+
+@keyframes rotar {
+  0% {
+    transform: rotate(0) scale(1); }
+  25% {
+    transform: rotate(0) scale(1); }
+  75% {
+    transform: rotate(720deg) scale(1.5); }
+  100% {
+    transform: rotate(720deg) scale(1.5); } }
+
 .w-1 {
   width: 10%; }
 
@@ -3805,6 +4019,22 @@ strong {
   color: #d8ff00;
   text-align: center;
   color: #f3ff66; }
+
+#buscar {
+  max-width: min-content;
+  border-radius: 6px;
+  box-shadow: 0 0 3px #777;
+  transition: all 1s ease-in-out;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
+  color: #d8ff00;
+  text-align: center;
+  text-shadow: 0 0 8px #d8ff00;
+  color: #d8ff00;
+  background-color: #000; }
+  #buscar:hover {
+    box-shadow: 0 0 15px #fff; }
 
 @font-face {
   font-family: "baron";
@@ -4034,231 +4264,3 @@ li {
   transition: all 0.3s ease; }
   .caja:hover {
     transform: scale(1.1) rotate(-1deg); }
-
-#buscar {
-  max-width: min-content;
-  border-radius: 6px;
-  box-shadow: 0 0 3px #777;
-  transition: all 1s ease-in-out;
-  text-transform: uppercase;
-  font-style: italic;
-  font-weight: 900;
-  color: #d8ff00;
-  text-align: center;
-  text-shadow: 0 0 8px #d8ff00;
-  color: #d8ff00;
-  background-color: #000; }
-  #buscar:hover {
-    box-shadow: 0 0 15px #fff; }
-
-@keyframes fade-in {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes volumen {
-  0% {
-    transform: perspective(500px) rotateX(12deg); }
-  50% {
-    transform: perspective(500px) rotateX(-12deg); }
-  100% {
-    transform: perspective(500px) rotateX(12deg); } }
-
-@keyframes whatsapp {
-  0% {
-    transform: scale(0.95) rotate(3.5deg); }
-  50% {
-    transform: scale(1) rotate(3.5deg); }
-  100% {
-    transform: scale(0.95) rotate(3.5deg); } }
-
-@keyframes btn-anim1 {
-  0% {
-    left: -100%; }
-  50%,
-  100% {
-    left: 100%; } }
-
-@keyframes btn-anim2 {
-  0% {
-    top: -100%; }
-  50%,
-  100% {
-    top: 100%; } }
-
-@keyframes btn-anim3 {
-  0% {
-    right: -100%; }
-  50%,
-  100% {
-    right: 100%; } }
-
-@keyframes btn-anim4 {
-  0% {
-    bottom: -100%; }
-  50%,
-  100% {
-    bottom: 100%; } }
-
-@keyframes pulse {
-  0% {
-    text-shadow: 0 0 1px #171717, 0 0 10px #d8ff00; }
-  50% {
-    text-shadow: 0 0 2px #171717, 0 0 20px #d8ff00; }
-  100% {
-    text-shadow: 0 0 2px #171717, 0 0 10px #d8ff00; } }
-
-@keyframes lineaPulso {
-  0% {
-    background-size: 0 0; }
-  50% {
-    background-size: 20% 2px; }
-  100% {
-    background-size: 0 0; } }
-
-@keyframes dancing {
-  0% {
-    transform: rotate(0); }
-  25% {
-    transform: rotate(-1deg); }
-  75% {
-    transform: rotate(1deg); }
-  100% {
-    transform: rotate(0); } }
-
-@keyframes doblez {
-  0% {
-    transform: rotateX(90deg); }
-  100% {
-    transform: rotateX(0deg); } }
-
-@keyframes agrandamiento {
-  0% {
-    transform: scale(0) scaleX(-3); }
-  50% {
-    transform: scale(1.3); }
-  100% {
-    transform: scale(1) scaleX(1); } }
-
-@keyframes squash {
-  0% {
-    transform: scaleY(0); }
-  100% {
-    transform: scaleY(1); } }
-
-@keyframes rotar {
-  0% {
-    transform: rotate(0) scale(1); }
-  25% {
-    transform: rotate(0) scale(1); }
-  75% {
-    transform: rotate(720deg) scale(1.5); }
-  100% {
-    transform: rotate(720deg) scale(1.5); } }
-
-@media screen and (max-width: 250px) {
-  header div > :nth-child(2) {
-    display: none; }
-  header ul {
-    display: none; }
-  header h1 {
-    display: none; }
-  main {
-    display: none; } }
-
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 5vw; }
-  .logo {
-    min-width: 50vw; }
-  .logo-texto {
-    font-size: 10vw; }
-  .buscar {
-    display: none; }
-  button {
-    display: block; }
-  .fa-bars {
-    color: #d8ff00;
-    width: 200px; }
-  .dropbtn {
-    background-color: #00000000;
-    cursor: url(../assets/icons/guante.svg), auto;
-    border: 0;
-    font-size: 1.3rem; }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    z-index: 10;
-    text-align: center;
-    animation: volumen 3s ease-in-out infinite; }
-    .dropdown-content {
-      background: radial-gradient(circle at 70% 30%, #484848 13%, #292626 48%, #222222 53%, #000000 100%);
-      display: none;
-      position: absolute;
-      min-width: 208px;
-      min-height: 205px;
-      box-shadow: 0 10px 100px 10px #d8ff00;
-      border-radius: 170px / 220px;
-      border: none; }
-      .dropdown-content li {
-        background: none; }
-        .dropdown-content li a {
-          text-transform: uppercase;
-          font-style: italic;
-          font-weight: 900;
-          color: #d8ff00;
-          text-align: center;
-          color: #f8f8f8;
-          text-decoration: none;
-          display: block; }
-    .dropdown:hover .dropdown-content {
-      display: block;
-      transform-origin: top;
-      animation: squash .7s ease-out; }
-  .promo-text h3 {
-    font-size: 4vw; }
-  .promo-text ul {
-    display: none; } }
-
-@media screen and (min-width: 768px) {
-  .logo {
-    min-width: 25vw; }
-  .logo-texto {
-    font-size: 5vw; }
-  .promo-text {
-    top: 18%;
-    left: 35%;
-    max-width: 30%; }
-    .promo-text h3 {
-      font-size: 2vw; }
-    .promo-text ul {
-      font-size: 1.5vw; } }
-
-@media screen and (min-width: 1024px) {
-  .sticky-top {
-    position: sticky;
-    top: 0;
-    z-index: 100; }
-  .logo {
-    min-width: 13vw; }
-  .logo-texto {
-    font-size: 4vw; }
-  .promo-text {
-    width: auto; }
-    .promo-text h3 {
-      font-size: 2.1vw; }
-    .promo-text ul {
-      font-size: 1.4vw; } }
-
-@media screen and (min-width: 1800px) {
-  .promo-text h3 {
-    font-size: 1.5vw; }
-  .promo-text ul {
-    display: 2vw; } }
-
-@media screen and (min-width: 2560px) {
-  .logo {
-    min-width: 250px; }
-  .promo-text ul {
-    display: none; } }
