@@ -4181,9 +4181,6 @@ nav ul li {
     background-size: 100% 1px;
     transition: all 0.5s ease; }
 
-button {
-  display: none; }
-
 footer i {
   text-shadow: 0 0 12px #000, 0 0 5px #d8ff00, 0 0 10px #d8ff00; }
 
