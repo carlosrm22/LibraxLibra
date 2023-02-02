@@ -17,6 +17,16 @@ body {
     text-decoration: none;
     animation: fade-in 1.5s ease-out;
     -webkit-animation: fade-in 1.5s ease-out;
+
+    li {
+        list-style-type: "🥊";
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
 }
 
 .bg {

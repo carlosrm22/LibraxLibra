@@ -4053,6 +4053,12 @@ body {
   text-decoration: none;
   animation: fade-in 1.5s ease-out;
   -webkit-animation: fade-in 1.5s ease-out; }
+  body li {
+    list-style-type: "🥊"; }
+  body img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; }
 
 .bg {
   background-color: #171717; }
@@ -4206,9 +4212,6 @@ footer span {
   height: 300px;
   animation: doblez 2s ease-in-out;
   -webkit-animation: doblez 2s ease-in-out; }
-
-li {
-  list-style-type: "🥊 "; }
 
 .article {
   background-color: #000;
