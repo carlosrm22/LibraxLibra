@@ -105,6 +105,12 @@
 }
 
 @media screen and (min-width: 768px) {
+    nav {
+        button {
+            display: none;
+        }
+    }
+
     .logo {
         min-width: 25vw;
     }

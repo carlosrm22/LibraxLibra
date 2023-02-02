@@ -63,6 +63,23 @@ body {
     box-shadow: 0 0 15px $white;
 }
 
+.galery {
+    figure {
+        flex: 1 0 calc(33.33% - 20px);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        opacity: .8;
+        border-style: solid;
+        border-width: 1px;
+        border-color: $gray-500;
+        transition: all .5s ease-out;
+        -webkit-transition: all .5s ease-out;
+    }
+}
+
 .fondo1 {
     background-image: radial-gradient(ellipse at center, $gray-900, #000000b3), url('../assets/images/galeria.webp');
     background-attachment: fixed;

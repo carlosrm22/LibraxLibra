@@ -3745,6 +3745,8 @@
     display: none; } }
 
 @media screen and (min-width: 768px) {
+  nav button {
+    display: none; }
   .logo {
     min-width: 25vw; }
   .logo-texto {
@@ -4095,6 +4097,19 @@ body {
   text-align: center;
   color: #000;
   box-shadow: 0 0 15px #fff; }
+
+.galery figure {
+  flex: 1 0 calc(33.33% - 20px); }
+
+.galery img {
+  width: 100%;
+  height: auto;
+  opacity: .8;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #777;
+  transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out; }
 
 .fondo1 {
   background-image: radial-gradient(ellipse at center, #131313, #000000b3), url("../assets/images/galeria.webp");
