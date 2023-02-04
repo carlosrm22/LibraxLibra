@@ -88,10 +88,18 @@ body {
 }
 
 .fondo2 {
-    background-image: radial-gradient(ellipse at center, $black, #000000b3), url('../assets/images/Línea3.svg');
+    // background-image: radial-gradient(ellipse at center, $black, #000000b3), url("../assets/images/dron.gif");
+    background-image: url("../assets/images/dron.gif");
     background-attachment: fixed;
     background-size: cover;
-    box-shadow: inset 0 0 5px $gray-500, 0 0 5px $gray-500;
+    // box-shadow: inset 0 0 5px $gray-500, 0 0 5px $gray-500;
+    opacity: 1;
+
+    article:hover {
+        opacity: .5;
+        transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+    }
 }
 
 .box-animation {
