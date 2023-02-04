@@ -125,3 +125,126 @@ body {
     -webkit-backdrop-filter: blur(11.8px);
     border: 1px solid #ffffff45;
 }
+
+.formCaja {
+    width: 600px;
+    padding: 40px !important;
+    background: $black;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px $gray-700;
+    border-radius: 10px;
+}
+
+.formCaja .formLabel {
+    position: relative;
+}
+
+.formCaja .formLabel input {
+    @include titles;
+    width: 100%;
+    padding: 10px 0 !important;
+    font-size: 16px;
+    margin-bottom: 30px !important;
+    border: none;
+    border-bottom: 1px solid $white;
+    outline: none;
+    background: transparent;
+    color: $primary;
+    text-shadow: 0 0 8px $primary;
+}
+
+.formCaja .formLabel label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: !important;
+    font-size: 16px;
+    color: $success;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.formCaja .formLabel input:focus ~ label,
+.formCaja .formLabel input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: $white;
+    font-style: oblique;
+    font-size: 12px;
+}
+
+.formCaja form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px !important;
+    color: $primary;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    -webkit-transition: .5s;
+    margin-top: 40px !important;
+    letter-spacing: 4px
+}
+
+.formCaja a:hover {
+    background: $primary;
+    color: $black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px $primary,
+        0 0 25px $primary,
+        0 0 50px $primary,
+        0 0 100px $primary;
+}
+
+.formCaja a span {
+    position: absolute;
+    display: block;
+}
+
+.formCaja a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, $primary);
+    animation: btn-anim1 1s linear infinite;
+    -webkit-animation: btn-anim1 1s linear infinite;
+}
+
+.formCaja a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, $primary);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+    -webkit-animation: btn-anim2 1s linear infinite;
+    -webkit-animation-delay: .25s
+}
+
+.formCaja a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, $primary);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+    -webkit-animation: btn-anim3 1s linear infinite;
+    -webkit-animation-delay: .5s;
+}
+
+.formCaja a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, $primary);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+    -webkit-animation: btn-anim4 1s linear infinite;
+    -webkit-animation-delay: .75s;
+}
