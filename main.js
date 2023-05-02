@@ -29,7 +29,11 @@ form.addEventListener('submit', (event) => {
     const minDateTime = fechaInput.min;
 
     if (!fecha || fecha < minDateTime) {
-        alert('Por favor, selecciona una fecha y hora válida para tu clase.');
+        Swal.fire({
+            icon: 'warning',
+            title: 'Oops...',
+            text: 'Por favor, selecciona una fecha y hora válida para tu clase.',
+        });
         return;
     }
 
@@ -38,7 +42,11 @@ form.addEventListener('submit', (event) => {
     // Envía la información a través de WhatsApp
     sendMessageToWhatsApp(fecha);
 
-    alert('Tu clase ha sido apartada con éxito. Fecha y hora: ' + fecha);
+    Swal.fire({
+        icon: 'success',
+        title: '¡Clase apartada con éxito!',
+        text: `Tu clase ha sido apartada con éxito. Fecha y hora: ${fecha}`,
+    });
 });
 
 // Establece la fecha y hora mínimas al cargar la página
