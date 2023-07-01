@@ -14,7 +14,7 @@ const setMinDateAndTime = () => {
 
 const sendMessageToWhatsApp = (fecha) => {
     const phoneNumber = '525522671215';
-    const message = `Hola, quiero apartar una clase muestra gratuita para el ${fecha}.`;
+    const message = `Hola, quiero apartar una clase muestra para el ${fecha}.`;
     const encodedMessage = encodeURIComponent(message);
     const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
 
